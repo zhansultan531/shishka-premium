@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Шишка Premium — кальянная премиум-класса в Астане. Роскошная атмосфера, авторские кальяны, европейская кухня и живая музыка.">
+    <title>Шишка Premium — Кальянная лаунж-бар в Астане</title>
+    
+    <!-- CSS файлы в правильном порядке -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Шапка сайта -->
+        <header class="site-header">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="15" r="8" fill="currentColor"/>
+                        <ellipse cx="25" cy="28" rx="6" ry="5" fill="currentColor" opacity="0.8"/>
+                        <ellipse cx="25" cy="38" rx="4" ry="4" fill="currentColor" opacity="0.6"/>
+                        <path d="M22 42 Q25 50 28 42" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                    <span class="logo-text">Шишка <span>Premium</span></span>
+                </a>
+                
+                <nav class="main-nav">
+                    <button class="mobile-menu-toggle" aria-label="Меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active">Главная</a></li>
+                        <li><a href="pages/about.html" class="nav-link">О нас</a></li>
+                        <li><a href="pages/menu.html" class="nav-link">Меню</a></li>
+                        <li><a href="pages/contacts.html" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero секция -->
+            <section class="hero">
+                <div class="hero-background">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80" alt="Интерьер лаунж-бара">
+                </div>
+                <div class="hero-content">
+                    <div class="decorative-line">
+                        <span class="decorative-diamond"></span>
+                    </div>
+                    <h1 class="gold-text">Шишка Premium</h1>
+                    <p class="lead">Премиальная кальянная лаунж-бар в самом сердце Астаны. Погрузитесь в атмосферу роскоши, насладитесь авторскими кальянами и изысканной кухней.</p>
+                    <div class="decorative-line">
+                        <span class="decorative-diamond"></span>
+                    </div>
+                    <div class="flex flex-center gap-md" style="margin-top: var(--spacing-xl);">
+                        <a href="pages/menu.html" class="btn btn-primary btn-lg">Наше меню</a>
+                        <a href="pages/contacts.html" class="btn btn-outline btn-lg">Забронировать</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Преимущества -->
+            <section class="section section-dark">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="gold-text">Почему выбирают нас</h2>
+                        <p>Мы создаём незабываемые впечатления для каждого гостя</p>
+                    </div>
+                    
+                    <div class="grid grid-4">
+                        <article class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L14.5 9H22L16 13.5L18.5 21L12 16L5.5 21L8 13.5L2 9H9.5L12 2Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">Премиум качество</h3>
+                            <p class="feature-text">Только лучшие табаки и угли от проверенных поставщиков со всего мира</p>
+                        </article>
+                        
+                        <article class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 3C7.03 3 3 7.03 3 12V21H21V12C21 7.03 16.97 3 12 3ZM12 5C15.86 5 19 8.14 19 12V19H5V12C5 8.14 8.14 5 12 5ZM11 8V13L15 15.5L16 14L12.5 12V8H11Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">Уютная атмосфера</h3>
+                            <p class="feature-text">Панорамный вид, приглушённый свет и продуманный дизайн для вашего комфорта</p>
+                        </article>
+                        
+                        <article class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 9H9V2H7V9H5V2H3V9C3 11.12 4.66 12.84 6.75 12.97V22H9.25V12.97C11.34 12.84 13 11.12 13 9V2H11V9ZM16 6V14H18.5V22H21V2C18.24 2 16 4.24 16 7V6Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">Авторская кухня</h3>
+                            <p class="feature-text">Европейская кухня от шеф-повара: стейки, том-ям, бургеры и многое другое</p>
+                        </article>
+                        
+                        <article class="feature">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 3V13.55C11.41 13.21 10.73 13 10 13C7.79 13 6 14.79 6 17S7.79 21 10 21 14 19.21 14 17V7H18V3H12Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">Живая музыка</h3>
+                            <p class="feature-text">DJ-сеты и живые выступления создают неповторимую атмосферу вечера</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- О заведении -->
+            <section class="section">
+                <div class="container">
+                    <div class="two-column">
+                        <div>
+                            <span class="badge badge-gold">Premium Class</span>
+                            <h2 style="margin-top: var(--spacing-md);">Добро пожаловать в <span class="accent-text">Шишка Premium</span></h2>
+                            <p>Шишка Premium — это не просто кальянная, это место, где каждая деталь продумана для вашего комфорта. Расположенный на проспекте Кабанбай батыра, наш лаунж предлагает уникальное сочетание восточной традиции и современного европейского стиля.</p>
+                            <p>Здесь вы найдёте уединённые VIP-кабинки для приватных встреч, панорамный зал с потрясающим видом на город и уютную барную зону для непринуждённого общения.</p>
+                            <div class="flex gap-md" style="margin-top: var(--spacing-lg);">
+                                <a href="pages/about.html" class="btn btn-primary">Узнать больше</a>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=600&q=80" alt="Интерьер Шишка Premium" style="border-radius: var(--border-radius-lg); box-shadow: var(--shadow-lg);">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Популярные позиции -->
+            <section class="section section-gradient">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="gold-text">Популярные позиции</h2>
+                        <p>Откройте для себя наши фирменные кальяны и блюда</p>
+                    </div>
+                    
+                    <div class="card-grid">
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?w=400&q=80" alt="Авторский кальян">
+                                <span class="card-badge">Хит</span>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Авторский микс «Шишка»</h3>
+                                <p class="card-text">Фирменный кальян на экзотических фруктах с секретным миксом табаков</p>
+                                <span class="card-price">от 8 000 ₸</span>
+                            </div>
+                        </article>
+                        
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80" alt="Стейк">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Стейк Рибай</h3>
+                                <p class="card-text">Мраморная говядина на гриле с соусом из трюфеля и овощами</p>
+                                <span class="card-price">12 500 ₸</span>
+                            </div>
+                        </article>
+                        
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80" alt="Том Ям">
+                                <span class="card-badge">New</span>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Том Ям с морепродуктами</h3>
+                                <p class="card-text">Тайский суп с креветками, мидиями, кальмарами и грибами</p>
+                                <span class="card-price">5 800 ₸</span>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="text-center" style="margin-top: var(--spacing-2xl);">
+                        <a href="pages/menu.html" class="btn btn-outline btn-lg">Полное меню</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Бронирование -->
+            <section class="section section-dark">
+                <div class="container container-narrow text-center">
+                    <h2 class="gold-text">Забронируйте столик</h2>
+                    <p class="lead">Зарезервируйте лучшее место заранее и проведите вечер в роскошной атмосфере Шишка Premium</p>
+                    <div class="decorative-line">
+                        <span class="decorative-diamond"></span>
+                    </div>
+                    <div class="flex flex-center gap-lg" style="margin-top: var(--spacing-xl);">
+                        <a href="tel:+77001234567" class="btn btn-primary btn-lg">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                            </svg>
+                            +7 700 123-45-67
+                        </a>
+                        <a href="pages/contacts.html" class="btn btn-outline btn-lg">Онлайн-бронь</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал сайта -->
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" style="width: 40px; height: 40px;">
+                            <circle cx="25" cy="15" r="8" fill="currentColor"/>
+                            <ellipse cx="25" cy="28" rx="6" ry="5" fill="currentColor" opacity="0.8"/>
+                            <ellipse cx="25" cy="38" rx="4" ry="4" fill="currentColor" opacity="0.6"/>
+                            <path d="M22 42 Q25 50 28 42" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span class="logo-text">Шишка <span>Premium</span></span>
+                    </a>
+                    <p style="margin-top: var(--spacing-md); color: var(--color-text-muted);">Премиальная кальянная лаунж-бар в Астане. Создаём атмосферу роскоши и комфорта с 2020 года.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-md);">Навигация</h4>
+                    <ul style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="pages/about.html">О нас</a></li>
+                        <li><a href="pages/menu.html">Меню</a></li>
+                        <li><a href="pages/contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-md);">Контакты</h4>
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z"/>
+                        </svg>
+                        <span class="contact-text">пр. Кабанбай батыра, 5/3<br>Астана, Казахстан</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24">
+                            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                        </svg>
+                        <span class="contact-text"><a href="tel:+77001234567">+7 700 123-45-67</a></span>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-md);">Часы работы</h4>
+                    <div class="schedule">
+                        <div class="schedule-item">
+                            <span class="schedule-day">Пн-Чт</span>
+                            <span class="schedule-time">14:00 — 02:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-day">Пт-Сб</span>
+                            <span class="schedule-time">14:00 — 05:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-day">Вс</span>
+                            <span class="schedule-time">14:00 — 00:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p style="color: var(--color-text-muted); margin: 0;">&copy; 2024 Шишка Premium. Все права защищены.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Скрипт для мобильного меню -->
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

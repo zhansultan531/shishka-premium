@@ -1,0 +1,353 @@
+/* ==========================================================================
+   Layout CSS - Структура страницы и сетка
+   Шишка Premium - Кальянная лаунж-бар
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Основная структура страницы
+   -------------------------------------------------------------------------- */
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* --------------------------------------------------------------------------
+   Контейнер
+   -------------------------------------------------------------------------- */
+
+.container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.container-narrow {
+    max-width: var(--container-narrow);
+}
+
+/* --------------------------------------------------------------------------
+   Секции
+   -------------------------------------------------------------------------- */
+
+.section {
+    padding: var(--spacing-4xl) 0;
+}
+
+.section-sm {
+    padding: var(--spacing-2xl) 0;
+}
+
+.section-lg {
+    padding: var(--spacing-4xl) 0;
+}
+
+.section-dark {
+    background-color: var(--color-bg-medium);
+}
+
+.section-gradient {
+    background: linear-gradient(180deg, var(--color-bg-dark) 0%, var(--color-bg-medium) 50%, var(--color-bg-dark) 100%);
+}
+
+/* --------------------------------------------------------------------------
+   Заголовки секций
+   -------------------------------------------------------------------------- */
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-3xl);
+}
+
+.section-header h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: var(--spacing-md);
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+}
+
+.section-header p {
+    max-width: 600px;
+    margin: var(--spacing-lg) auto 0;
+}
+
+/* --------------------------------------------------------------------------
+   Flexbox сетка
+   -------------------------------------------------------------------------- */
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.gap-sm {
+    gap: var(--spacing-sm);
+}
+
+.gap-md {
+    gap: var(--spacing-md);
+}
+
+.gap-lg {
+    gap: var(--spacing-lg);
+}
+
+.gap-xl {
+    gap: var(--spacing-xl);
+}
+
+/* --------------------------------------------------------------------------
+   CSS Grid сетка
+   -------------------------------------------------------------------------- */
+
+.grid {
+    display: grid;
+    gap: var(--spacing-xl);
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* --------------------------------------------------------------------------
+   Header Layout
+   -------------------------------------------------------------------------- */
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--color-bg-overlay);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(201, 169, 98, 0.1);
+    transition: background-color var(--transition-normal);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+/* --------------------------------------------------------------------------
+   Hero Section Layout
+   -------------------------------------------------------------------------- */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(13, 13, 13, 0.7) 0%,
+        rgba(13, 13, 13, 0.5) 50%,
+        rgba(13, 13, 13, 0.9) 100%
+    );
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: var(--spacing-xl);
+}
+
+.hero-sm {
+    min-height: 50vh;
+}
+
+/* --------------------------------------------------------------------------
+   Footer Layout
+   -------------------------------------------------------------------------- */
+
+.site-footer {
+    background-color: var(--color-bg-medium);
+    border-top: 1px solid rgba(201, 169, 98, 0.1);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-2xl);
+    padding: var(--spacing-3xl) var(--spacing-lg);
+    max-width: var(--container-max);
+    margin: 0 auto;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: var(--spacing-lg);
+    border-top: 1px solid rgba(201, 169, 98, 0.1);
+    background-color: var(--color-bg-dark);
+}
+
+/* --------------------------------------------------------------------------
+   Двухколоночный макет
+   -------------------------------------------------------------------------- */
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+.two-column-reverse {
+    direction: rtl;
+}
+
+.two-column-reverse > * {
+    direction: ltr;
+}
+
+/* --------------------------------------------------------------------------
+   Карточная сетка
+   -------------------------------------------------------------------------- */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+/* --------------------------------------------------------------------------
+   Адаптивность
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .two-column {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+    
+    .two-column-reverse {
+        direction: ltr;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    .grid-2,
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+    
+    .header-container {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero {
+        min-height: 80vh;
+    }
+    
+    .hero-content {
+        padding: var(--spacing-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-auto {
+        grid-template-columns: 1fr;
+    }
+}

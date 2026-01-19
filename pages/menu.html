@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Меню кальянной Шишка Premium. Авторские кальяны, европейская кухня, коктейли и напитки.">
+    <title>Меню — Шишка Premium</title>
+    
+    <!-- CSS файлы в правильном порядке -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Шапка сайта -->
+        <header class="site-header">
+            <div class="header-container">
+                <a href="../index.html" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="15" r="8" fill="currentColor"/>
+                        <ellipse cx="25" cy="28" rx="6" ry="5" fill="currentColor" opacity="0.8"/>
+                        <ellipse cx="25" cy="38" rx="4" ry="4" fill="currentColor" opacity="0.6"/>
+                        <path d="M22 42 Q25 50 28 42" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                    <span class="logo-text">Шишка <span>Premium</span></span>
+                </a>
+                
+                <nav class="main-nav">
+                    <button class="mobile-menu-toggle" aria-label="Меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Главная</a></li>
+                        <li><a href="about.html" class="nav-link">О нас</a></li>
+                        <li><a href="menu.html" class="nav-link active">Меню</a></li>
+                        <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero секция -->
+            <section class="hero hero-sm">
+                <div class="hero-background">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80" alt="Меню Шишка Premium">
+                </div>
+                <div class="hero-content">
+                    <h1 class="gold-text">Наше меню</h1>
+                    <p class="lead">Авторские кальяны, изысканная кухня и напитки для идеального вечера</p>
+                </div>
+            </section>
+
+            <!-- Кальяны -->
+            <section class="section" id="hookah">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="badge badge-gold">Кальяны</span>
+                        <h2 style="margin-top: var(--spacing-md);">Премиальные <span class="accent-text">кальяны</span></h2>
+                        <p>Более 50 видов табака и фирменные миксы от наших мастеров</p>
+                    </div>
+                    
+                    <div class="grid grid-2" style="gap: var(--spacing-lg);">
+                        <div>
+                            <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-lg);">Классические</h3>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">Классический кальян</h4>
+                                    <p class="menu-card-description">Выбор табака на ваш вкус: фрукты, ягоды, мята, специи</p>
+                                </div>
+                                <span class="menu-card-price">6 000 ₸</span>
+                            </article>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">Premium Selection</h4>
+                                    <p class="menu-card-description">Премиальные табаки: Tangiers, Darkside, Must Have</p>
+                                </div>
+                                <span class="menu-card-price">8 000 ₸</span>
+                            </article>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">На фруктовой чаше</h4>
+                                    <p class="menu-card-description">Грейпфрут, ананас, яблоко или кокос</p>
+                                </div>
+                                <span class="menu-card-price">9 500 ₸</span>
+                            </article>
+                        </div>
+                        
+                        <div>
+                            <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-lg);">Авторские миксы</h3>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">Шишка Signature <span class="badge badge-gold" style="margin-left: var(--spacing-sm);">Хит</span></h4>
+                                    <p class="menu-card-description">Секретный микс шефа: тропические фрукты, мята и специи</p>
+                                </div>
+                                <span class="menu-card-price">10 000 ₸</span>
+                            </article>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">Астана Найт</h4>
+                                    <p class="menu-card-description">Черника, ежевика, холодок и лёгкая сладость</p>
+                                </div>
+                                <span class="menu-card-price">9 000 ₸</span>
+                            </article>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">Восточная сказка</h4>
+                                    <p class="menu-card-description">Кардамон, роза, личи и восточные пряности</p>
+                                </div>
+                                <span class="menu-card-price">9 500 ₸</span>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Кухня -->
+            <section class="section section-dark" id="food">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="badge badge-outline">Кухня</span>
+                        <h2 style="margin-top: var(--spacing-md);">Европейская <span class="accent-text">кухня</span></h2>
+                        <p>Блюда от нашего шеф-повара из свежих продуктов</p>
+                    </div>
+                    
+                    <div class="card-grid">
+                        <!-- Супы -->
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=400&q=80" alt="Том Ям">
+                                <span class="card-badge">Острое</span>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Том Ям с морепродуктами</h3>
+                                <p class="card-text">Тайский суп с креветками, мидиями, кальмарами и грибами шиитаке</p>
+                                <span class="card-price">5 800 ₸</span>
+                            </div>
+                        </article>
+                        
+                        <!-- Стейки -->
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80" alt="Стейк Рибай">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Стейк Рибай</h3>
+                                <p class="card-text">Мраморная говядина 300г, соус из трюфеля, овощи гриль</p>
+                                <span class="card-price">12 500 ₸</span>
+                            </div>
+                        </article>
+                        
+                        <!-- Бургеры -->
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" alt="Бургер Шишка">
+                                <span class="card-badge">Хит</span>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Бургер «Шишка»</h3>
+                                <p class="card-text">Говяжья котлета, бекон, чеддер, карамелизированный лук, фирменный соус</p>
+                                <span class="card-price">4 500 ₸</span>
+                            </div>
+                        </article>
+                        
+                        <!-- Пицца -->
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80" alt="Пицца Четыре сыра">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Пицца «Четыре сыра»</h3>
+                                <p class="card-text">Моцарелла, дор блю, пармезан, рикотта на тонком тесте</p>
+                                <span class="card-price">5 200 ₸</span>
+                            </div>
+                        </article>
+                        
+                        <!-- Закрытая пицца -->
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=80" alt="Кальцоне">
+                                <span class="card-badge">New</span>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Кальцоне с курицей</h3>
+                                <p class="card-text">Закрытая пицца с куриным филе, грибами и сливочным соусом</p>
+                                <span class="card-price">4 800 ₸</span>
+                            </div>
+                        </article>
+                        
+                        <!-- Вафли -->
+                        <article class="card">
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=400&q=80" alt="Бельгийские вафли">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Бельгийские вафли</h3>
+                                <p class="card-text">С шариком мороженого, свежими ягодами и шоколадным соусом</p>
+                                <span class="card-price">3 200 ₸</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Напитки -->
+            <section class="section" id="drinks">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="badge badge-gold">Напитки</span>
+                        <h2 style="margin-top: var(--spacing-md);">Бар и <span class="accent-text">напитки</span></h2>
+                        <p>Авторские коктейли, чайная карта и безалкогольные напитки</p>
+                    </div>
+                    
+                    <div class="grid grid-3" style="gap: var(--spacing-xl);">
+                        <!-- Коктейли -->
+                        <div>
+                            <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-lg); text-align: center;">Авторские коктейли</h3>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">Golden Shishka</h4>
+                                    <p class="menu-card-description">Виски, мёд, лимон, имбирь</p>
+                                </div>
+                                <span class="menu-card-price">3 500 ₸</span>
+                            </article>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">Astana Sunset</h4>
+                                    <p class="menu-card-description">Ром, маракуйя, апельсин, гренадин</p>
+                                </div>
+                                <span class="menu-card-price">3 800 ₸</span>
+                            </article>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">Midnight Moscow</h4>
+                                    <p class="menu-card-description">Водка, кофейный ликёр, эспрессо</p>
+                                </div>
+                                <span class="menu-card-price">3 200 ₸</span>
+                            </article>
+                        </div>
+                        
+                        <!-- Чайная карта -->
+                        <div>
+                            <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-lg); text-align: center;">Чайная карта</h3>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">Китайский чай</h4>
+                                    <p class="menu-card-description">Да Хун Пао, Те Гуань Инь, Пуэр</p>
+                                </div>
+                                <span class="menu-card-price">2 500 ₸</span>
+                            </article>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">Авторский чай</h4>
+                                    <p class="menu-card-description">Фруктовые и ягодные композиции</p>
+                                </div>
+                                <span class="menu-card-price">2 000 ₸</span>
+                            </article>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">Глинтвейн</h4>
+                                    <p class="menu-card-description">Красное вино, специи, цитрусы</p>
+                                </div>
+                                <span class="menu-card-price">2 800 ₸</span>
+                            </article>
+                        </div>
+                        
+                        <!-- Лимонады -->
+                        <div>
+                            <h3 style="color: var(--color-primary); margin-bottom: var(--spacing-lg); text-align: center;">Фирменные лимонады</h3>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">Тропический</h4>
+                                    <p class="menu-card-description">Манго, маракуйя, кокос</p>
+                                </div>
+                                <span class="menu-card-price">1 800 ₸</span>
+                            </article>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">Ягодный микс</h4>
+                                    <p class="menu-card-description">Клубника, малина, мята</p>
+                                </div>
+                                <span class="menu-card-price">1 600 ₸</span>
+                            </article>
+                            
+                            <article class="menu-card">
+                                <div class="menu-card-content">
+                                    <h4 class="menu-card-title">Имбирно-цитрусовый</h4>
+                                    <p class="menu-card-description">Имбирь, лимон, апельсин, мёд</p>
+                                </div>
+                                <span class="menu-card-price">1 500 ₸</span>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Спецпредложения -->
+            <section class="section section-gradient">
+                <div class="container container-narrow text-center">
+                    <h2 class="gold-text">Специальные предложения</h2>
+                    <div class="decorative-line">
+                        <span class="decorative-diamond"></span>
+                    </div>
+                    
+                    <div class="grid grid-2" style="margin-top: var(--spacing-2xl); gap: var(--spacing-xl);">
+                        <div class="info-box" style="flex-direction: column; text-align: center; border-left: none; border-top: 3px solid var(--color-primary);">
+                            <h4 style="color: var(--color-primary);">Бизнес-ланч</h4>
+                            <p style="margin: 0;">Пн-Пт с 12:00 до 16:00</p>
+                            <span style="font-size: var(--fs-2xl); color: var(--color-primary); font-family: var(--font-primary);">от 3 500 ₸</span>
+                        </div>
+                        
+                        <div class="info-box" style="flex-direction: column; text-align: center; border-left: none; border-top: 3px solid var(--color-primary);">
+                            <h4 style="color: var(--color-primary);">Happy Hours</h4>
+                            <p style="margin: 0;">Ежедневно с 14:00 до 18:00</p>
+                            <span style="font-size: var(--fs-2xl); color: var(--color-primary); font-family: var(--font-primary);">-20% на кальяны</span>
+                        </div>
+                    </div>
+                    
+                    <p style="margin-top: var(--spacing-2xl); font-size: var(--fs-sm); color: var(--color-text-muted);">* Цены указаны в тенге. Меню может меняться в зависимости от сезона и наличия продуктов.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Подвал сайта -->
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <a href="../index.html" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" style="width: 40px; height: 40px;">
+                            <circle cx="25" cy="15" r="8" fill="currentColor"/>
+                            <ellipse cx="25" cy="28" rx="6" ry="5" fill="currentColor" opacity="0.8"/>
+                            <ellipse cx="25" cy="38" rx="4" ry="4" fill="currentColor" opacity="0.6"/>
+                            <path d="M22 42 Q25 50 28 42" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span class="logo-text">Шишка <span>Premium</span></span>
+                    </a>
+                    <p style="margin-top: var(--spacing-md); color: var(--color-text-muted);">Премиальная кальянная лаунж-бар в Астане. Создаём атмосферу роскоши и комфорта с 2020 года.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-md);">Навигация</h4>
+                    <ul style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="menu.html">Меню</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-md);">Контакты</h4>
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z"/>
+                        </svg>
+                        <span class="contact-text">пр. Кабанбай батыра, 5/3<br>Астана, Казахстан</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24">
+                            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"/>
+                        </svg>
+                        <span class="contact-text"><a href="tel:+77001234567">+7 700 123-45-67</a></span>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--spacing-md);">Часы работы</h4>
+                    <div class="schedule">
+                        <div class="schedule-item">
+                            <span class="schedule-day">Пн-Чт</span>
+                            <span class="schedule-time">14:00 — 02:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-day">Пт-Сб</span>
+                            <span class="schedule-time">14:00 — 05:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="schedule-day">Вс</span>
+                            <span class="schedule-time">14:00 — 00:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p style="color: var(--color-text-muted); margin: 0;">&copy; 2024 Шишка Premium. Все права защищены.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
